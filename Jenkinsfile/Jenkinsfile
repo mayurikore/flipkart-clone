@@ -306,8 +306,8 @@ pipeline {
                     <p>Started by: ${buildUser}</p>
                     <p>Build URL: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
                 """,
-                to: 'harishn662@gmail.com',
-                from: 'harishn662@gmail.com',
+                to: 'kalkutageanav@gmail.com',
+                from: 'kalkutageanav@gmail.com',
                 mimeType: 'text/html',
                 attachmentsPattern: 'quickview-report.txt,cves-report.json,cves-report.txt,image-cves-report.json,image-cves-report.txt,image-recommendations.json,image-recommendations.txt,dependency-check-report.xml,zap_report.html,zap_report.json'
                     )  
