@@ -14,8 +14,8 @@ pipeline {
         SCANNER_HOME = tool 'sonar-scanner'
 
         registryCredential = 'ecr:ap-south-1:awscreds'
-        IMAGE_NAME   = '970378220457.dkr.ecr.ap-south-1.amazonaws.com/flipkartimg'               
-        flipkartRegistry = "https://970378220457.dkr.ecr.ap-south-1.amazonaws.com"
+        IMAGE_NAME   = '004552773475.dkr.ecr.us-east-1.amazonaws.com/flipkartimg'               
+        flipkartRegistry = "https://004552773475.dkr.ecr.us-east-1.amazonaws.com"
     }
     
     
@@ -28,7 +28,7 @@ pipeline {
 
         stage("Git Checkout") {
             steps {
-                git branch: 'main', url: 'https://github.com/harishnshetty/Flipkart-Clone-DevSecops-Terraform-EKS-Harbor-Scout-OWASP-ZAP-Gitops-Hard-Level-project.git'
+                git branch: 'main', url: 'https://github.com/mayurikore/flipkart-clone.git'
             }
         }
 
